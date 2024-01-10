@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./footer.module.scss";
 
 export function Footer() {
@@ -21,16 +22,16 @@ export function Footer() {
             </h3>
             <ul>
               <li>
-                <a href="/about">About Us</a>
+                <Link href="/about">About Us</Link>
               </li>
               <li>
-                <a href="/gallery">Gallery</a>
+                <Link href="/gallery">Gallery</Link>
               </li>
               <li>
-                <a href="/services">Services</a>
+                <Link href="/services">Services</Link>
               </li>
               <li>
-                <a href="/contact">Contact Us</a>
+                <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>

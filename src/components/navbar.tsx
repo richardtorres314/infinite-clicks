@@ -1,3 +1,7 @@
+"use client";
+
+import Link from "next/link";
+
 const pages = [
   {
     name: "About Us",
@@ -27,13 +31,13 @@ export function Navbar() {
     >
       <div className="container is-align-items-center">
         <div className="navbar-brand">
-          <a
+          <Link
             className="navbar-item has-text-weight-bold is-uppercase has-text-primary"
             href="/"
           >
             <img src="moments.svg" />
             &nbsp;&nbsp;Infinite Clicks
-          </a>
+          </Link>
         </div>
         <div className="navbar-menu" id="navbar-menu">
           {pages.map((page) => (
@@ -47,13 +51,13 @@ export function Navbar() {
           ))}
         </div>
         <div className="navbar-end">
-          <a
+          <Link
             href="/contact"
             className="navbar-item button is-primary"
             role="button"
           >
             Book Now
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
