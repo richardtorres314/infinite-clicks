@@ -41,13 +41,13 @@ export function Navbar() {
         </div>
         <div className="navbar-menu" id="navbar-menu">
           {pages.map((page) => (
-            <a
+            <Link
               key={page.href}
               href={page.href}
               className="navbar-item is-uppercase"
             >
               {page.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="navbar-end">
