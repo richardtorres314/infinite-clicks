@@ -1,95 +1,81 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className="hero is-large is-primary">
+        <div className="hero-body">
+          <div className="container has-text-centered">
+            <h1 className="title">Infinite Clicks</h1>
+            <h2 className="subtitle">360 Photo Booth</h2>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      </section>
+      <section className="section">
+        <div className="container">
+          <h2 className="title has-text-centered">What We Offer</h2>
+          <p className="has-text-centered">
+            Unlimited HD Videos &bull; Text Message Videos &bull; Photo Booth
+            Attendant &bull; Fun Props &bull; Digital Video Album (up to 6
+            months) &bull; On-site Video Sharing
           </p>
-        </a>
-      </div>
-    </main>
-  )
+        </div>
+      </section>
+      <section className="section">
+        <div className="container is-max-desktop">
+          <div className="media">
+            <div className="media-content">
+              <h2 className="title">Capture That Special Moment</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus sed metus nulla. Maecenas et nisi cursus, rhoncus
+                risus at, euismod nisl. Maecenas tempus ultrices nunc non
+                gravida. In auctor nec dui dictum condimentum. Aliquam iaculis
+                sed arcu sodales rutrum. Pellentesque lacus lectus, venenatis
+                eget nisl at, egestas fermentum elit. Duis ullamcorper bibendum
+                justo at tincidunt.
+              </p>
+            </div>
+            <figure className="image is-1x2 media-right">
+              <video autoPlay loop width="300">
+                <source
+                  src="61-20231028-214928.638693-slomo.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container py-4 has-text-centered">
+          <h2 className="title">Our Service</h2>
+          <div className="level">
+            <div className="level-item">
+              <div>
+                <div className="title mb-2">🥂</div>
+                <div className="heading is-size-6">Weddings</div>
+              </div>
+            </div>
+            <div className="level-item">
+              <div>
+                <div className="title mb-2">📁</div>
+                <div className="heading is-size-6">Corporate Events</div>
+              </div>
+            </div>
+            <div className="level-item">
+              <div>
+                <div className="title mb-2">🎂</div>
+                <div className="heading is-size-6">Birthdays</div>
+              </div>
+            </div>
+            <div className="level-item">
+              <div>
+                <div className="title mb-2">🥳</div>
+                <div className="heading is-size-6">Parties</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }

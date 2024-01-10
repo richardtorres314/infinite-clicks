@@ -1,0 +1,8 @@
+.image {
+  max-width: 256px;
+}
+
+.content {
+  margin: auto;
+  width: fit-content;
+}
