@@ -2,9 +2,9 @@
 const nextConfig = {
   output: "export",
   basePath:
-    process.env.NODE_ENV === "production"
-      ? "/richardtorres314.github.io/infinite-clicks"
-      : undefined,
+    process.env.NODE_ENV === "production" ? "/infinite-clicks" : undefined,
+  assetPrefix:
+    process.env.NODE_ENV === "production" ? "/infinite-clicks/" : undefined,
 };
 
 module.exports = nextConfig;
